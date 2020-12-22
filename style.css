@@ -86,8 +86,8 @@ h2 {
   }
 }
 .container {
-  width: 80vw;
-  height: 80vh;
+  width: 70vw;
+  height: 70vh;
 }
 .container svg {
   height: 40%;
@@ -135,4 +135,34 @@ h2 {
   stroke: var(--cyan);
 }
 
+@media only screen and (max-device-width: 500px) {
+  .container {
+    width: 90vw;
+    height: 90vh;
+  }
+  .container svg {
+    height: 40%;
+    width: 100%;
+    overflow: visible;
+  }
+  
+  h1 {
+    font-family: 'Inconsolata', Consolas, monospace;
+    font-size: 1rem;
+    color: #d7b94c;
+  }
 
+  .typing {
+    position: relative;
+    margin-left: 30%;
+    width: 40%;
+  }
+  
+  h2 {
+    font-family: 'Inconsolata', Consolas, monospace;
+    font-size: 0.5rem;
+    text-align: center;
+    color: #d7b94c;
+  }
+  
+}
