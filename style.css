@@ -24,6 +24,14 @@ h1 {
   color: #d7b94c;
 }
 
+h2 {
+  font-family: 'Inconsolata', Consolas, monospace;
+  font-size: 2em;
+  text-align: center;
+  color: #d7b94c;
+}
+
+
 .typing {
   position: relative;
   margin-left: 40%;
@@ -38,6 +46,22 @@ h1 {
   background: #1d1f20;
   -webkit-animation: typing 2s steps(16) forwards, caret 1s infinite;
           animation: typing 2s steps(16) forwards, caret 1s infinite;
+}
+
+.typing-2 {
+  position: relative;
+  margin-left: 10%;
+  width: 80%;
+}
+.typing-2::after {
+  content: "...";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  color: white;
+  background: #1d1f20;
+  -webkit-animation: typing 5s steps(150) forwards, caret 1s infinite;
+          animation: typing 5s steps(150) forwards, caret 1s infinite;
 }
 
 @-webkit-keyframes typing {
