@@ -22,6 +22,7 @@ var cat = {
         down: s(".paw-left .down"),
     },
 };
+
 var style = getComputedStyle(document.documentElement);
 var green = style.getPropertyValue("--green");
 var pink = style.getPropertyValue("--pink");
