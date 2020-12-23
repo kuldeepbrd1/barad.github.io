@@ -18,24 +18,34 @@ body {
           align-items: flex-end;
   overflow: hidden;
 }
+.main-container {
+  width: 100%;
+  height: 80%;
+}
+
+.text {
+  margin: 0;
+}
+
 h1 {
-  font-family: 'Inconsolata', Consolas, monospace;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 3em;
-  color: #d7b94c;
+  text-align: center;
+  color: skyblue;
 }
 
 h2 {
-  font-family: 'Inconsolata', Consolas, monospace;
-  font-size: 2em;
+  font-family: 'IBM Plex Sans', sans-serif;
   text-align: center;
-  color: #d7b94c;
+  color: skyblue;
 }
 
 
 .typing {
   position: relative;
-  margin-left: 40%;
+  margin-left: 33%;
   width: 35%;
+  text-align: center;
 }
 .typing::after {
   content: "|";
@@ -50,14 +60,14 @@ h2 {
 
 .typing-2 {
   position: relative;
-  margin-left: 10%;
-  width: 80%;
+  margin: 0 auto;
+  width: 60%;
 }
 .typing-2::after {
   content: "...";
   position: absolute;
   right: 0;
-  width: 100%;
+  width: 90%;
   color: white;
   background: #1d1f20;
   -webkit-animation: typing 5s steps(150) forwards, caret 1s infinite;
@@ -86,12 +96,14 @@ h2 {
   }
 }
 .container {
-  width: 70vw;
-  height: 70vh;
+  width: 50vw;
+  margin: 0 auto;
 }
 .container svg {
   height: 40%;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 1em;
   overflow: visible;
 }
 
@@ -106,7 +118,7 @@ h2 {
   fill: none;
 }
 #bongo-cat .paw, #bongo-cat .head {
-  stroke: var(--orange);
+  stroke: #36C9C6;
 }
 #bongo-cat .laptop-keyboard {
   stroke-width: 2;
@@ -118,17 +130,17 @@ h2 {
 #bongo-cat .laptop-base,
 #bongo-cat .laptop-cover,
 #bongo-cat .paw .pads {
-  stroke: var(--pink);
+  stroke: var(--blue);
 }
 #bongo-cat .table line,
 #bongo-cat .headphone .band,
 #bongo-cat .headphone .speaker path:nth-child(3) {
-  stroke: var(--green);
+  stroke: var(--orange);
 }
 #bongo-cat .terminal-frame,
 #bongo-cat .laptop-keyboard,
 #bongo-cat .headphone .speaker path:nth-child(2) {
-  stroke: var(--blue);
+  stroke: #ED6A5A;
 }
 #bongo-cat .terminal-code,
 #bongo-cat .headphone .speaker path:first-child {
@@ -138,31 +150,45 @@ h2 {
 @media only screen and (max-device-width: 500px) {
   .container {
     width: 90vw;
-    height: 90vh;
   }
   .container svg {
     height: 40%;
     width: 100%;
     overflow: visible;
   }
-  
+
   h1 {
-    font-family: 'Inconsolata', Consolas, monospace;
-    font-size: 1rem;
-    color: #d7b94c;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1em;
+    color: skyblue;
+    text-align: center;
   }
 
   .typing {
     position: relative;
-    margin-left: 30%;
-    width: 40%;
+    margin-left: 35%;
+    width: 35%;
   }
-  
+
   h2 {
-    font-family: 'Inconsolata', Consolas, monospace;
-    font-size: 0.5rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 0.5em;
     text-align: center;
-    color: #d7b94c;
+    color: skyblue;
   }
-  
+  .typing-2 {
+    position: relative;
+    margin-left: 10%;
+    width: 80%;
+  }
+  .typing-2::after {
+    content: "...";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: white;
+    background: #1d1f20;
+    -webkit-animation: typing 0.1s steps(10) forwards, caret 1s infinite;
+            animation: typing 0.1s steps(10) forwards, caret 1s infinite;
+  }
 }
