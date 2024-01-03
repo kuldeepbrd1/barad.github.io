@@ -2,4 +2,7 @@ theme: jekyll-theme-cayman
 plugins:
   - jekyll-seo-tag
 
-permalink: /:title
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
